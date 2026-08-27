@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>ForeCast - Weather</title><link rel="stylesheet" href="real.css">
+</head>
+<body>
+<nav class="navbar"><div class="nav-container">
+<a class="logo" href="#home">ForeCast</a>
+<div class="nav-links"><a href="#home">Home</a><a href="#weather">Weather</a><a href="#contact">Contact Us</a><a href="#signin" class="sign-in">Sign In</a></div>
+</div></nav>
+<main id="home" class="weather-app">
+<h1>Check the Weather</h1>
+<form id="weather-form"><input id="city-input" placeholder="Enter a city" required><button>Check Weather</button><button type="button" id="location-btn">Use My Location</button></form>
+<p id="status"></p>
+<section id="weather" class="weather-card hidden"><h2 id="location-name"></h2><p id="updated"></p>
+<div class="current"><div><div id="temperature" class="temperature">--°C</div><b id="condition">--</b></div>
+<div class="details"><p>Feels like: <strong id="feels">--</strong>°C</p><p>Humidity: <strong id="humidity">--</strong>%</p><p>Wind: <strong id="wind">--</strong> km/h</p><p>Rain: <strong id="rain">--</strong> mm</p></div></div>
+<h3>7-Day Forecast</h3><div id="forecast" class="forecast"></div></section>
+<section id="contact" class="contact"><h2>Contact Us</h2><p>Live weather information powered by Open-Meteo.</p></section>
+</main><script src="real.js"></script>
+</body></html>
